@@ -1,0 +1,106 @@
+.banners{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.images{
+  position: relative;
+  display: flex;
+  width: 400vw;
+  height: 70vh;
+  transition: all 1s ease-in-out;
+}
+
+.images::after{
+  content: '';
+  position: absolute;
+  top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 70vh;
+  background: linear-gradient(transparent, rgba(0,0,0,0.2));
+}
+
+.img{
+  width: 100vw;
+  height: max-content;
+}
+
+.icons{
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  color: black;
+  
+}
+
+.icon{
+  font-size: 30px;
+  cursor: pointer;
+  
+}
+
+.icon:hover{
+  color: rgb(119, 119, 45);
+}
+
+
+
+
+
+/* ........Mobile responsiveness....... */
+@media all and (max-width: 420px) {
+
+  .images{
+    height: unset;
+  }
+
+  .icon{
+    font-size: 16px;
+  }
+
+  .icons{
+    left: 46%;
+  }
+
+  .icons div:first-child{
+    margin-right:10px ;
+  }
+}
+
+
+
+/* ......Tablet Responsiveness...... */
+@media all and (max-width: 920px){
+
+  .images{
+    height: unset;
+  }
+
+  .icon{
+    font-size: 25px;
+  }
+
+  .icons{
+    left: 46%;
+  }
+
+  .icons div:first-child{
+    margin-right:10px ;
+  }
+
+}
+
+
+
+
+
+
+
+  
+ 
+
+
+

@@ -1,0 +1,145 @@
+.login-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 61.3vh;
+  justify-content: center;
+  padding: 30px 5%;
+  
+}
+
+.login-container img:first-child{
+  width: 45px;
+}
+
+.login-container img:last-child{
+  width: 50px;
+}
+
+.google{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.git-hub{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.google-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(15, 15, 15, 0.3);
+  padding: 3px 18px;
+  border-radius: 3px;
+  height: 50px;
+  width: 250px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.git-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid rgba(15, 15, 15, 0.3);
+  padding: 3px 18px;
+  border-radius: 3px;
+  height: 50px;
+  width: 250px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.google-btn button{
+  border: 0;
+  outline: 0;
+  background-color: black;
+  color: white;
+  height: 40px;
+  padding: 5px 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.google-btn button:hover{
+  background-color: rgb(77, 74, 74);
+}
+
+
+
+
+
+
+/* .......Mobile Responsiveness..... */
+@media all and (max-width: 420px){
+  .google{
+    flex-direction: column;
+  }
+
+  .google-container{
+    margin-bottom: 10px;
+    padding: 3px 10px;
+    width: 200px;
+  }
+
+  .login-container img:first-child{
+    width: 30px;
+  }
+
+  .git-hub{
+    flex-direction: column;
+  }
+  .git-container{
+    margin-bottom: 10px;
+    padding: 3px 10px;
+    width: 200px;
+  }
+
+  .git-container p{
+    font-size: 12px;
+    margin-left: 5px;
+    font-weight: bold;
+  }
+
+  .google-container p{
+    font-size: 12px;
+    margin-left: 5px;
+    font-weight: bold;
+  }
+
+  .google-btn button{
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+
+  .login-container{
+    height: unset;
+  }
+}
+
+
+
+/* ....Tablet Responsiveness.... */
+@media all and (max-width: 920px){
+  .login-container{
+    height: 72vh;
+  }
+
+  .git-container{
+    margin-bottom: 20px;
+    padding: 10px 18px;
+    width: 250px;
+  }
+
+  .google-container{
+    margin-bottom: 10px;
+    padding: 10px 18px;
+    width: 250px;
+  }
+
+}

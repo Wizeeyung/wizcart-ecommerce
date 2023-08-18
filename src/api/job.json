@@ -1,0 +1,164 @@
+[
+  {
+    "job_name": "Software Engineer",
+    "description": "We are seeking a skilled software engineer to develop and maintain our cutting-edge software applications.",
+    "address": "123 High Street",
+    "postcode": "SW1A 1AA",
+    "latitude": 51.5014,
+    "longitude": -0.1419,
+    "category": "Information Technology"
+  },
+  {
+    "job_name": "Marketing Manager",
+    "description": "We are looking for a creative and experienced marketing manager to lead our marketing campaigns and initiatives.",
+    "address": "456 Marketing Avenue",
+    "postcode": "WC2N 5DU",
+    "latitude": 51.5096,
+    "longitude": -0.1266,
+    "category": "Marketing"
+  },
+  {
+    "job_name": "Nurse Practitioner",
+    "description": "Join our healthcare team as a nurse practitioner to provide quality care to patients and support medical staff.",
+    "address": "789 Health Road",
+    "postcode": "E1 6AN",
+    "latitude": 51.5154,
+    "longitude": -0.0541,
+    "category": "Healthcare"
+  },
+  {
+    "job_name": "Financial Analyst",
+    "description": "Analyze financial data and provide valuable insights as a financial analyst in our finance department.",
+    "address": "321 Finance Lane",
+    "postcode": "EC2N 1HQ",
+    "latitude": 51.5155,
+    "longitude": -0.0865,
+    "category": "Finance"
+  },
+  {
+    "job_name": "Graphic Designer",
+    "description": "Create captivating visuals and designs as a graphic designer to enhance our brand's identity.",
+    "address": "987 Design Place",
+    "postcode": "SE1 9PJ",
+    "latitude": 51.5034,
+    "longitude": -0.0803,
+    "category": "Design"
+  },
+  {
+    "job_name": "Sales Representative",
+    "description": "Join our sales team and promote our products to potential clients and generate new leads.",
+    "address": "543 Sales Street",
+    "postcode": "W1B 2QD",
+    "latitude": 51.5142,
+    "longitude": -0.1440,
+    "category": "Sales"
+  },
+  {
+    "job_name": "Human Resources Manager",
+    "description": "We are hiring an HR manager to oversee all aspects of our HR department and support our employees.",
+    "address": "876 HR Avenue",
+    "postcode": "SW1P 2AY",
+    "latitude": 51.4975,
+    "longitude": -0.1304,
+    "category": "Human Resources"
+  },
+  {
+    "job_name": "Teacher",
+    "description": "Passionate teachers wanted to educate and inspire young minds in our school.",
+    "address": "234 Education Road",
+    "postcode": "NW1 4RY",
+    "latitude": 51.5292,
+    "longitude": -0.1561,
+    "category": "Education"
+  },
+  {
+    "job_name": "Mechanical Engineer",
+    "description": "Design and develop mechanical systems and components as a mechanical engineer in our engineering team.",
+    "address": "876 Engineering Lane",
+    "postcode": "SE11 5PJ",
+    "latitude": 51.4922,
+    "longitude": -0.1103,
+    "category": "Engineering"
+  },
+  {
+    "job_name": "Customer Service Representative",
+    "description": "Assist customers with inquiries and provide top-notch service as a customer service representative.",
+    "address": "123 Customer Ave",
+    "postcode": "N1 9AG",
+    "latitude": 51.5316,
+    "longitude": -0.1097,
+    "category": "Customer Service"
+  },
+  {
+    "job_name": "Data Analyst",
+    "description": "Analyze and interpret data to provide actionable insights for our company's data-driven decisions.",
+    "address": "987 Data Street",
+    "postcode": "SW3 5XP",
+    "latitude": 51.4878,
+    "longitude": -0.1680,
+    "category": "Data Analysis"
+  },
+  {
+    "job_name": "Architect",
+    "description": "Create innovative architectural designs and oversee construction projects as an architect.",
+    "address": "456 Architecture Place",
+    "postcode": "W1F 8DG",
+    "latitude": 51.5143,
+    "longitude": -0.1362,
+    "category": "Architecture"
+  },
+  {
+    "job_name": "Journalist",
+    "description": "Join our media team as a journalist and report on current events and stories of interest.",
+    "address": "321 Media Road",
+    "postcode": "WC2H 7JA",
+    "latitude": 51.5160,
+    "longitude": -0.1272,
+    "category": "Media"
+  },
+  {
+    "job_name": "Restaurant Manager",
+    "description": "Manage daily restaurant operations and ensure excellent customer service as a restaurant manager.",
+    "address": "789 Restaurant Lane",
+    "postcode": "E2 9PJ",
+    "latitude": 51.5296,
+    "longitude": -0.0612,
+    "category": "Hospitality"
+  },
+  {
+    "job_name": "Accountant",
+    "description": "Handle financial records and ensure compliance with accounting standards as an accountant.",
+    "address": "543 Accounting Avenue",
+    "postcode": "EC3V 0DX",
+    "latitude": 51.5133,
+    "longitude": -0.0859,
+    "category": "Accounting"
+  },
+  {
+    "job_name": "Lawyer",
+    "description": "Provide legal counsel and representation to clients in various legal matters.",
+    "address": "876 Legal Street",
+    "postcode": "SE1 7EH",
+    "latitude": 51.5033,
+    "longitude": -0.0905,
+    "category": "Legal"
+  },
+  {
+    "job_name": "Project Manager",
+    "description": "Lead and coordinate projects from initiation to completion as a project manager in our organization.",
+    "address": "234 Project Road",
+    "postcode": "SW11 2LN",
+    "latitude": 51.4747,
+    "longitude": -0.1756,
+    "category": "Project Management"
+  },
+  {
+    "job_name": "Retail Sales Associate",
+    "description": "Assist customers, maintain the store, and achieve sales targets as a retail sales associate.",
+    "address": "876 Retail Avenue",
+    "postcode": "W2 1JU",
+    "latitude": 51.5121,
+    "longitude": -0.1810,
+    "category": "Retail"
+  }
+]

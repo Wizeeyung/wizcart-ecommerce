@@ -1,0 +1,331 @@
+.product-container{
+  padding: 10px 5%;
+}
+.title{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title h1{
+  background-color: black;
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+  max-width: fit-content;
+}
+
+.title p{
+  max-width: 700px;
+  margin: 0;
+  text-align: center; 
+}
+
+.product img{
+  width: 100%;
+  height: 380px;
+  object-fit: fill;
+  transition: all 0.2s ease-in-out;
+}
+
+.product img:hover{
+  transform: scale(1.02);
+}
+
+.product-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+  
+}
+
+.product{
+  position: relative;
+  width: 20vw;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.product span{
+  position: absolute;
+  background-color: black;
+  color: white;
+  right: 0;
+  top: 20px;
+  padding: 5px 18px;
+}
+
+.write-up{
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.container{
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+
+}
+
+.price{
+  display: flex;
+  align-items: flex-start;
+ 
+}
+
+.price p{
+  margin: 0;
+  font-size: 14px;
+}
+.price p:first-child{
+  text-decoration: line-through;
+  margin-right: 10px;
+  color: gray;
+}
+
+.price p:last-child{
+  font-weight: bold;
+}
+
+
+.heading h1{
+  font-size: 15px;
+  margin: 0;
+}
+.heading p{
+  font-size: 14px;
+  margin: 0;
+}
+
+.cart{
+  position: absolute;
+  right: 15px;
+  bottom: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s ease;
+}
+.cart:hover{
+  color: green;
+  
+}
+
+.single-product-container{
+  padding: 30px 5%;
+  display: flex;
+  width: 100%;
+}
+
+.left-details{
+  position: relative;
+  width: 30%;
+  margin-right: 30px;
+  height: 500px;
+}
+
+.left-details div span{
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 5px 20px;
+  top: 25px;
+  right: 0;
+}
+
+.left-details img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.right-details{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 70%;
+}
+
+.right-details h1{
+  margin: 0;
+}
+
+.price-single-product{
+  display: flex;
+  align-items: center;
+}
+
+.price-single-product p:first-child{
+  text-decoration: line-through;
+  margin-right: 15px;
+}
+
+.price-single-product p:last-child{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.quantity-box{
+  display: flex;
+  align-items: center;
+}
+
+.quantity{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 180px;
+  margin-right: 10px;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.quantity p{
+  margin: 0;
+}
+
+.btn button:first-child{
+  margin-right: 10px;
+}
+
+.btn button:last-child{
+  margin-left: 10px;
+}
+
+.quantity button{
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: 0 8px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.quantity button:hover{
+  background-color: black;
+  color: white;
+
+}
+
+.last-btn{
+  outline: 0;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 13.5px 20px;
+  cursor: pointer;
+}
+
+.last-btn:hover{
+  background-color: white;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.category{
+  font-weight: bold;
+  margin-right: 3px;
+}
+
+
+
+
+
+/* ........Mobile Responsiveness...... */
+@media all and (max-width: 420px) {
+
+  .title h1{
+    font-size: 10px;
+  }
+
+  .title p{
+    font-size: 12px;
+  }
+
+  .product{
+    width: 100vw;
+  }
+
+  .single-product-container{
+    flex-direction: column;
+  }
+
+  .left-details{
+    width: 100%;
+  }
+
+  .right-details{
+    width: 100%;
+  }
+
+  .right-details h1{
+    font-size: 25px;
+    margin-top: 15px;
+  }
+
+  .custom p{
+    margin: 0;
+  }
+
+  .description{
+    text-align: justify;
+  }
+  
+}
+
+
+
+
+/* ....Tablet Responsiveness.... */
+@media all and (max-width: 920px){
+  .title h1{
+    font-size: 15px;
+  }
+
+  .title p{
+    font-size: 15px;
+  }
+
+  .product{
+    width: 40vw;
+  }
+
+  .single-product-container{
+    flex-direction: column;
+  }
+
+  .left-details{
+    width: 100%;
+    height: 80vh;
+  }
+
+  .right-details{
+    width: 100%;
+  }
+
+  .right-details h1{
+    font-size: 30px;
+    margin-top: 15px;
+  }
+
+  .custom p{
+    margin: 0;
+  }
+
+  .description{
+    text-align: justify;
+  }
+
+}
+
+
+
+
