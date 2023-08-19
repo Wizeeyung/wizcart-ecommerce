@@ -27,6 +27,12 @@
   .error{
     height: 72vh;
   }
+
+  .error button{
+    font-size: 14px;
+    margin-top: 20px;
+
+  }
 }
 
 

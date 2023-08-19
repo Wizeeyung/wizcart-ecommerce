@@ -8,6 +8,7 @@ import {ToastContainer, toast } from 'react-toastify'
 import {AiOutlineArrowLeft} from 'react-icons/ai'
 import {Link, useNavigate} from 'react-router-dom'
 import StripeCheckout from 'react-stripe-checkout';
+import Error from './Error'
 
 
 const Cart = () => {
@@ -73,20 +74,20 @@ const Cart = () => {
             
             
             <button onClick={handleCheckOut}>proceed to checkout</button>
-            {payNow && (
-              <div className='stripes'>
-                <StripeCheckout
-                  stripeKey = 'pk_test_51NeJ8VIqs7XmD6HQLed9d2JIFWYJVrmoe8tq7xRkBbeKQiru6wtqwD3xruKPeXefaGKkVqJcZ3Njp0TvGgxF87Ec00qTR8Jwjb'
-                  name = 'Wizzy Online Cart'
-                  amount = {totalAmount * 100}
-                  label = 'Pay to wizzy'
-                  description = {`Your payment amount is $${totalAmount}`}
-                  // token = {payment}
-                  email = {userInfo.email}
-                />
-                <div className='stripe' onClick={()=> navigate('*')}></div>
+            {payNow && ( <Error />
+              // <div className='stripes'>
+              //   <StripeCheckout
+              //     stripeKey = 'pk_test_51NeJ8VIqs7XmD6HQLed9d2JIFWYJVrmoe8tq7xRkBbeKQiru6wtqwD3xruKPeXefaGKkVqJcZ3Njp0TvGgxF87Ec00qTR8Jwjb'
+              //     name = 'Wizzy Online Cart'
+              //     amount = {totalAmount * 100}
+              //     label = 'Pay to wizzy'
+              //     description = {`Your payment amount is $${totalAmount}`}
+              //     // token = {payment}
+              //     email = {userInfo.email}
+              //   />
+              //   <div className='stripe' onClick={()=> navigate('*')}></div>
                 
-              </div>
+              // </div>
             )}
           </div>
 
