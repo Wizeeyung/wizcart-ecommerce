@@ -10,6 +10,7 @@ import SingleProduct from '../src/components/SingleProduct'
 import Login from './pages/Login';
 import Error from './pages/Error';
 import Shop from './pages/Shop';
+import SignOut from './pages/SignOut';
 
 
 
@@ -48,7 +49,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/login',
-        element: <Login />
+        element: <SignOut />
       },
       {
         path: '/shop',

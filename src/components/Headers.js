@@ -44,7 +44,7 @@ const Header = () => {
               <Link  to='/shop' className='li-links'><li onClick={closeMenu}>Shop</li></Link>
               <li onClick={closeMenu}>Element</li>
               <Link to='/login'>
-                <li onClick={closeMenu}><img src={userInfo ? userInfo.image : 'https://e7.pngegg.com/pngimages/416/62/png-clipart-anonymous-person-login-google-account-computer-icons-user-activity-miscellaneous-computer-thumbnail.png'} alt='profilepic' /></li>
+                <li onClick={closeMenu}><img src='https://e7.pngegg.com/pngimages/416/62/png-clipart-anonymous-person-login-google-account-computer-icons-user-activity-miscellaneous-computer-thumbnail.png' alt='profilepic' /></li>
               </Link>
               {userInfo && <p className='mail'>{userInfo.name ? userInfo.name : userInfo.email}</p>}
             </div>

@@ -23,7 +23,7 @@
 
 
 /* ......Tablet Responsiveness.... */
-@media all and (max-width: 920px){
+@media all and (min-width: 421px) and (max-width: 920px){
   .error{
     height: 72vh;
   }

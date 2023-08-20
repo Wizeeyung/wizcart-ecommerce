@@ -251,7 +251,7 @@
   }
 
   .product{
-    width: 100vw;
+    width: 100%;
   }
 
   .single-product-container{
@@ -285,7 +285,7 @@
 
 
 /* ....Tablet Responsiveness.... */
-@media all and (max-width: 920px){
+@media all and (min-width: 421px) and (max-width: 920px){
   .title h1{
     font-size: 15px;
   }
@@ -294,9 +294,9 @@
     font-size: 15px;
   }
 
-  .product{
+  /* .product{
     width: 40vw;
-  }
+  } */
 
   .single-product-container{
     flex-direction: column;

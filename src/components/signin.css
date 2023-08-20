@@ -1,0 +1,47 @@
+.sign-up{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  /* border: 1px solid rgba(0, 0, 0, 0.7); */
+}
+
+.sign-up-container{
+  border: 1px solid rgba(14, 13, 13, 0.4);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form input{
+  width: 300px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+form button{
+  display: flex;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid rgba(14, 13, 13, 0.7);
+  padding: 8px 16px;
+}
+
+
+.sign-out button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid rgba(14, 13, 13, 0.7);
+  padding: 20px 16px;
+  width: 200px;
+  font-size: 20px;
+
+}
