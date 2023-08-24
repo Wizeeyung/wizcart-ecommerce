@@ -34,6 +34,7 @@ form button{
   padding: 8px 16px;
   cursor: pointer;
   transition: all 0.2s ease-in;
+  color: black;
 }
 
 form button:hover{
@@ -50,6 +51,7 @@ form button:hover{
   padding: 20px 16px;
   width: 200px;
   font-size: 20px;
+  color: black;
 }
 
 .sign-row{

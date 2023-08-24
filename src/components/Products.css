@@ -193,10 +193,12 @@
 
 .btn button:first-child{
   margin-right: 10px;
+  color: black;
 }
 
 .btn button:last-child{
   margin-left: 10px;
+  color: black;
 }
 
 .quantity button{

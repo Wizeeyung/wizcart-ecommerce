@@ -54,7 +54,7 @@
 @media all and (max-width: 420px) {
 
   .images{
-    height: 18vh;
+    height: 40%;
   }
 
   .images::after{
@@ -66,7 +66,7 @@
   }
 
   .icons{
-    left: 46%;
+    left: 45%;
   }
 
   .icons div:first-child{
