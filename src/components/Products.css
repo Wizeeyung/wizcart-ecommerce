@@ -296,9 +296,9 @@
     font-size: 15px;
   }
 
-  /* .product{
+  .product{
     width: 40vw;
-  } */
+  }
 
   .single-product-container{
     flex-direction: column;
