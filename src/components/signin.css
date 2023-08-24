@@ -52,6 +52,12 @@ form button:hover{
   width: 200px;
   font-size: 20px;
   color: black;
+  border-radius: 3px;
+}
+
+.sign-out button:hover{
+  background-color: black;
+  color: white;
 }
 
 .sign-row{

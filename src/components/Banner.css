@@ -54,10 +54,17 @@
 @media all and (max-width: 420px) {
 
   .images{
-    height: 150px;
+    height: 40%;
+    width: 100vw;
+    
   }
 
   .images::after{
+    height: 100%;
+  }
+
+  .img{
+    width: 100%;
     height: 100%;
   }
 

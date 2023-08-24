@@ -55,7 +55,6 @@ const SignOut = () => {
           }
         ))
         
-        // setTimeout(()=> navigate('/'), 1500)
       }).catch((error)=> alert(error.code) , setLogged(true))
     } else{
       signInWithEmailAndPassword(database, email, password).then(data =>{
