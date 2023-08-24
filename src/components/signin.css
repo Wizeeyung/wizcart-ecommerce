@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 61.2vh;
   /* border: 1px solid rgba(0, 0, 0, 0.7); */
 }
 
@@ -32,6 +32,13 @@ form button{
   background-color: transparent;
   border: 1px solid rgba(14, 13, 13, 0.7);
   padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+form button:hover{
+  background-color: black;
+  color: white;
 }
 
 
@@ -43,5 +50,24 @@ form button{
   padding: 20px 16px;
   width: 200px;
   font-size: 20px;
+}
 
+.sign-row{
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  padding: 20px;
+}
+
+.border{
+  border: 1px solid black;
+  padding: 8px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.active{
+  background-color: black;
+  color: white;
+  transition: all 0.1s ease;
 }

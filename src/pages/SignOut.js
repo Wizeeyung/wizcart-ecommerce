@@ -4,18 +4,22 @@ import { database } from '../Firebase.config'
 import {signInWithEmailAndPassword ,createUserWithEmailAndPassword, signOut} from 'firebase/auth'
 import { useNavigate } from 'react-router-dom'
 import { addUser, removeUser } from '../redux/wizzyCartSlice'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import {ToastContainer, toast} from 'react-toastify'
 
 
 
 const SignOut = () => {
 
+  const userInfo = useSelector((state)=> state.wizzyCart.userInfo)
   const [emailValue, setEmailValue] = useState('')
   const [passwordValue, setPasswordValue] = useState('')
   const [logged, setLogged] =useState(false)
+  
 
   console.log(logged)
+  console.log(userInfo)
+ 
 
   const navigate = useNavigate()
   const dispatch = useDispatch()
@@ -25,7 +29,8 @@ const SignOut = () => {
     setEmailValue(e.target.value)
   }
 
-  const handleSignOut = ()=>{
+  const handleSignOut = (e)=>{
+    e.preventDefault()
     signOut(database).then(()=> {toast.success('Logged Out Successfully')
     dispatch(removeUser())
     setLogged(false)
@@ -49,9 +54,9 @@ const SignOut = () => {
             email: user.email
           }
         ))
-        setLogged(true)
+        
         // setTimeout(()=> navigate('/'), 1500)
-      }).catch((error)=> alert(error.code))
+      }).catch((error)=> alert(error.code) , setLogged(true))
     } else{
       signInWithEmailAndPassword(database, email, password).then(data =>{
         console.log(data,'authData')
@@ -62,8 +67,8 @@ const SignOut = () => {
             email: user.email
           }
         ))
-        setLogged(true)
-        setTimeout(()=> navigate('/'), 1500)
+        
+        setTimeout(()=> navigate('/'), 1000)
       }).catch((error)=> alert(error.code))
     }
     
@@ -80,6 +85,13 @@ const SignOut = () => {
 
   return (
     <div className='sign-up'>
+      {!userInfo && <div className='sign-row'>
+        <div className={logged === false ? 'border active' : 'border'} onClick={()=> setLogged(false)}>Sign Up</div>
+        <div className={logged === true ? 'border active' : 'border'} onClick={()=> setLogged(true)}>Sign In</div>
+      </div> }
+      
+      
+     {!userInfo ?
       <div className='sign-up-container'>
         <h2>{!logged ? 'Sign Up' : 'Sign In'}</h2>
         <form onSubmit={(e)=> handleSUbmit(e, logged ? 'Signin' : 'signup')}>
@@ -91,13 +103,16 @@ const SignOut = () => {
             <label>Password:</label>
             <input type='password' name='password' value={passwordValue} onChange={handlePasswordChange} />
           </div>
-          <button>Submit</button>
+          <button>{!logged ? 'Sign Up' : 'Sign In'}</button>
         </form>
-      </div>
+      </div> :
       
       <div className='sign-out'>
         <button onClick={handleSignOut}>Sign Out</button>
-      </div> 
+      </div> }
+  
+      
+      
       
 
       
